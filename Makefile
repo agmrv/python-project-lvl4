@@ -21,4 +21,4 @@ package-install: build
 requirements:
 	poetry export -f requirements.txt --without-hashes --output requirements.txt
 
-.PHONY: install lint test selfcheck check build publish
+.PHONY: install lint test selfcheck check build publish requirements
