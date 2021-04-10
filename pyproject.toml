@@ -11,6 +11,7 @@ repository = "https://github.com/agmrv/python-project-lvl4"
 [tool.poetry.dependencies]
 python = "^3.8"
 Django = "^3.2"
+dj-database-url = "^0.5.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.9.0"
