@@ -18,4 +18,7 @@ build: check
 package-install: build
 	pip install --user dist/*.whl
 
+requirements:
+	poetry export -f requirements.txt --without-hashes --output requirements.txt
+
 .PHONY: install lint test selfcheck check build publish
