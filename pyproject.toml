@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = ""
+authors = ["agmrv <airatgum@gmail.com>"]
+packages = [
+  { include = "task_manager" },
+]
+repository = "https://github.com/agmrv/python-project-lvl4"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^3.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.0"
+pytest = "^6.2.3"
+pytest-cov = "^2.11.1"
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
