@@ -24,4 +24,4 @@ requirements:
 runserver:
 	python manage.py runserver
 
-.PHONY: install lint test selfcheck check build publish requirements
+.PHONY: install lint test selfcheck check build publish requirements runserver
