@@ -5,7 +5,7 @@ lint:
 	poetry run flake8 task_manager
 
 test:
-	poetry run pytest -s -v --verbose --cov=page_loader tests/
+	poetry run coverage run --source 'task_manager' manage.py test
 
 selfcheck:
 	poetry check
@@ -20,5 +20,8 @@ package-install: build
 
 requirements:
 	poetry export -f requirements.txt --without-hashes --output requirements.txt
+
+runserver:
+	python manage.py runserver
 
 .PHONY: install lint test selfcheck check build publish requirements
