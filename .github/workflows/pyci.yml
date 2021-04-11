@@ -20,6 +20,8 @@ jobs:
           make install
       - name: Run linter and tests
         run: make check
+        env:
+          SECRET_KEY: SECRET_KEY
       - name: Publish code coverage
         uses: paambaati/codeclimate-action@v2.7.4
         env:
