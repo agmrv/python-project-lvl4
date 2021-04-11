@@ -24,4 +24,8 @@ requirements:
 runserver:
 	python manage.py runserver
 
-.PHONY: install lint test selfcheck check build publish requirements runserver
+deploy:
+	git push heroku main
+	heroku ps
+
+.PHONY: install lint test selfcheck check build publish requirements runserver deploy
