@@ -29,7 +29,8 @@ if os.getenv("DEBUG") == "TRUE":
     DEBUG = True
 else:
     DEBUG = False
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ["dj-task-manager.herokuapp.com"]
 
 
 # Application definition
