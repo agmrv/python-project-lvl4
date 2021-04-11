@@ -30,7 +30,7 @@ if os.getenv("DEBUG") == "TRUE":
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ["dj-task-manager.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "dj-task-manager.herokuapp.com"]
 
 
 # Application definition
