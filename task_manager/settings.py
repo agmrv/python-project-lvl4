@@ -38,8 +38,10 @@ ALLOWED_HOSTS = ["127.0.0.1", "dj-task-manager.herokuapp.com"]
 INSTALLED_APPS = [
     # My apps
     'tasks.apps.TasksConfig',
+    'users.apps.UsersConfig',
 
     # Third party apps
+    'bootstrap4',
 
     # Default django apps
     'django.contrib.admin',
