@@ -1,9 +1,16 @@
 from django.shortcuts import render
+from django.views import View
 
 
-def register(request):
-    return render(request, "registration/register.html")
+class Register(View):
+    template_name = "registration/register.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
 
 
-def users(request):
-    return render(request, "registration/users.html")
+class Users(View):
+    template_name = "registration/users.html"
+
+    def get(self, request):
+        return render(request, self.template_name)

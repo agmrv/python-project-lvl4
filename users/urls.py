@@ -6,7 +6,7 @@ from users import views
 app_name = "users"
 
 urlpatterns = [
-    path("", views.users, name="users"),
     path("", include("django.contrib.auth.urls")),
-    path("register/", views.register, name="register"),
+    path("", views.Users.as_view(), name="users"),
+    path("register/", views.Register.as_view(), name="register"),
 ]

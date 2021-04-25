@@ -6,5 +6,5 @@ from tasks import views
 app_name = "tasks"
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path("", views.Index.as_view(), name="index"),
 ]
