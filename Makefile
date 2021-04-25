@@ -24,7 +24,7 @@ requirements:
 runserver:
 	python manage.py runserver
 
-deploy: check
+deploy: check requirements
 	git push heroku main
 	heroku ps
 
