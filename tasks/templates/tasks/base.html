@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load bootstrap4 %}
 
 <!doctype html>
@@ -6,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,
     shrink-to-fit=no">
-  <title>Task manager</title>
+  <title>{% trans "Task manager" %}</title>
   {% bootstrap_css %}
   {% bootstrap_javascript jquery='full' %}
 </head>
@@ -14,7 +15,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <a class="navbar-brand" href="{% url 'tasks:index' %}">
-        Task manager</a>
+      {% trans "Task manager" %}</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarCollapse" aria-controls="navbarCollapse"
@@ -26,7 +27,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="{% url 'users:users' %}">
-            Users
+            {% trans "Users" %}
           </a>
         </li>
       </ul>
@@ -34,17 +35,17 @@
       <ul class="navbar-nav ml-auto">
         {% if user.is_authenticated %}
           <li class="nav-item">
-            <span class="navbar-text">Hello, {{ user.username }}.</span>
+            <span class="navbar-text">{% trans "Hello" %}, {{ user.username }}.</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:logout' %}">Log out</a>
+            <a class="nav-link" href="{% url 'users:logout' %}">{% trans "Log out" %}</a>
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:register' %}">Register</a>
+            <a class="nav-link" href="{% url 'users:register' %}">{% trans "Register" %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:login' %}">Log in</a>
+            <a class="nav-link" href="{% url 'users:login' %}">{% trans "Log in" %}</a>
           </li>
         {% endif %}
       </ul>
