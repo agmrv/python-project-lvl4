@@ -22,7 +22,7 @@ msgstr ""
 
 #: tasks/templates/tasks/base.html:10 tasks/templates/tasks/base.html:18
 msgid "Task manager"
-msgstr ""
+msgstr "Менеджер задач"
 
 #: tasks/templates/tasks/base.html:30
 msgid "Users"
