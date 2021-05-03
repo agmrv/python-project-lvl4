@@ -11,6 +11,7 @@ selfcheck:
 	poetry check
 
 check: selfcheck lint test
+	python manage.py check
 
 build: check
 	poetry build
