@@ -31,4 +31,7 @@ deploy: check requirements
 translation:
 	django-admin compilemessages
 
-.PHONY: install lint test selfcheck check build publish requirements runserver deploy translation
+migrate:
+	python manage.py migrate
+
+.PHONY: install lint test selfcheck check build publish requirements runserver deploy translation migrate
