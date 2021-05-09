@@ -33,6 +33,7 @@ translation:
 	django-admin compilemessages
 
 migrate:
+	python manage.py makemigrations
 	python manage.py migrate
 
 .PHONY: install lint test selfcheck check build publish requirements runserver deploy translation migrate
