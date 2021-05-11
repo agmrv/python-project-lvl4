@@ -7,6 +7,6 @@ app_name = "users"
 
 urlpatterns = [
     path("", include("django.contrib.auth.urls")),
-    path("", views.Users.as_view(), name="users"),
+    path("list/", views.Users.as_view(), name="list"),
     path("register/", views.Register.as_view(), name="register"),
 ]
