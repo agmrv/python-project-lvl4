@@ -29,11 +29,14 @@ deploy: check requirements
 	git push heroku main
 	heroku ps
 
-translation:
+makemessages:
+	django-admin makemessages -a -l ru
+
+compilemessages:
 	django-admin compilemessages
 
 migrate:
 	python manage.py makemigrations
 	python manage.py migrate
 
-.PHONY: install lint test selfcheck check build publish requirements runserver deploy translation migrate
+.PHONY: install lint test selfcheck check build publish requirements runserver deploy makemessages compilemessages migrate
