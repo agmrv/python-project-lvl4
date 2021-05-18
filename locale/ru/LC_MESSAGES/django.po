@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-25 13:28+0500\n"
+"POT-Creation-Date: 2021-05-18 10:55+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,46 +20,46 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: tasks/templates/tasks/base.html:10 tasks/templates/tasks/base.html:18
+#: .\tasks\templates\tasks\base.html:10 .\tasks\templates\tasks\base.html:18
 msgid "Task manager"
 msgstr "Менеджер задач"
 
-#: tasks/templates/tasks/base.html:30
+#: .\tasks\templates\tasks\base.html:30
 msgid "Users"
 msgstr "Пользователи"
 
-#: tasks/templates/tasks/base.html:38
+#: .\tasks\templates\tasks\base.html:38
 msgid "Hello"
 msgstr "Привет"
 
-#: tasks/templates/tasks/base.html:41
+#: .\tasks\templates\tasks\base.html:41
 msgid "Log out"
 msgstr "Выход"
 
-#: tasks/templates/tasks/base.html:45
+#: .\tasks\templates\tasks\base.html:45
 msgid "Register"
 msgstr "Регистрация"
 
-#: tasks/templates/tasks/base.html:48
+#: .\tasks\templates\tasks\base.html:48
 msgid "Log in"
 msgstr "Вход"
 
-#: tasks/templates/tasks/index.html:5
+#: .\tasks\templates\tasks\index.html:5
 msgid "index"
 msgstr "Главная"
 
-#: users/templates/registration/logged_out.html:5
+#: .\users\templates\registration\logged_out.html:5
 msgid "logged_out"
 msgstr "Страница выхода"
 
-#: users/templates/registration/login.html:5
+#: .\users\templates\registration\login.html:5
 msgid "login"
 msgstr "Страница входа"
 
-#: users/templates/registration/register.html:5
+#: .\users\templates\registration\register.html:5
 msgid "register"
 msgstr "Страница регистрации"
 
-#: users/templates/registration/users.html:5
-msgid "users"
+#: .\users\templates\registration\users.html:5
+msgid "userslist"
 msgstr "Страница списка пользователей"
