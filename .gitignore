@@ -9,3 +9,4 @@ tmp/
 .vscode/
 .idea/
 .env
+*.sqlite3
