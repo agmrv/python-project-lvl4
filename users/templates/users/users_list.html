@@ -1,0 +1,11 @@
+{% extends "tasks/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<p>{% trans "users_list" %}</p>
+<ul>
+    {% for user in users %}
+    <li>{{ user }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}

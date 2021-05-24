@@ -38,14 +38,14 @@
             <span class="navbar-text">{% trans "Hello" %}, {{ user.username }}.</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:logout' %}">{% trans "Log out" %}</a>
+            <a class="nav-link" href="/logout/">{% trans "Log out" %}</a>
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:register' %}">{% trans "Register" %}</a>
+            <a class="nav-link" href="{% url 'users:create' %}">{% trans "Register" %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:login' %}">{% trans "Log in" %}</a>
+            <a class="nav-link" href="/login/">{% trans "Log in" %}</a>
           </li>
         {% endif %}
       </ul>
