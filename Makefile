@@ -39,4 +39,8 @@ migrate:
 	python manage.py makemigrations
 	python manage.py migrate
 
-.PHONY: install lint test selfcheck check build publish requirements runserver deploy messages compilemessages migrate
+heroku-migrate:
+	heroku run python manage.py makemigrations
+	heroku run python manage.py migrate
+
+.PHONY: install lint test selfcheck check build publish requirements runserver deploy messages compilemessages migrate heroku-migrate
