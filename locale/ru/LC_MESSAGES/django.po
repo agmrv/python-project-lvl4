@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-24 10:29+0500\n"
+"POT-Creation-Date: 2021-06-11 22:09+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,6 +60,38 @@ msgstr "Страница выхода"
 msgid "login"
 msgstr "Страница входа"
 
+#: .\users\templates\users\delete.html:5
+msgid "delete_user_page"
+msgstr "Страница удаления пользователя с ID"
+
+#: .\users\templates\users\update.html:5
+msgid "update_user_page"
+msgstr "Страница обновления пользователя с ID"
+
 #: .\users\templates\users\users_list.html:5
 msgid "users_list"
 msgstr "Страница списка пользователей"
+
+#: .\users\templates\users\users_list.html:10
+msgid "username"
+msgstr "Имя пользователя"
+
+#: .\users\templates\users\users_list.html:11
+msgid "fullname"
+msgstr "Полное имя"
+
+#: .\users\templates\users\users_list.html:12
+msgid "creation_date"
+msgstr "Страница регистрации пользователя"
+
+#: .\users\templates\users\users_list.html:13
+msgid "edit_buttons"
+msgstr "Кнопки редактирования"
+
+#: .\users\templates\users\users_list.html:25
+msgid "update_user"
+msgstr "Изменить"
+
+#: .\users\templates\users\users_list.html:27
+msgid "delete_user"
+msgstr "Удалить"
