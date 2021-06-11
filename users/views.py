@@ -10,6 +10,22 @@ class Create(View):
         return render(request, self.template_name)
 
 
+class Update(View):
+    template_name = "users/update.html"
+
+    def get(self, request, user_id):
+        context = {"user_id": user_id}
+        return render(request, self.template_name, context=context)
+
+
+class Delete(View):
+    template_name = "users/delete.html"
+
+    def get(self, request, user_id):
+        context = {"user_id": user_id}
+        return render(request, self.template_name, context=context)
+
+
 class Users(View):
     template_name = "users/users_list.html"
 
