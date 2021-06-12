@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-11 22:09+0500\n"
+"POT-Creation-Date: 2021-06-12 19:21+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,7 @@ msgid "Register"
 msgstr "Регистрация"
 
 #: .\tasks\templates\tasks\base.html:48
+#: .\users\templates\registration\login.html:15
 msgid "Log in"
 msgstr "Вход"
 
@@ -56,9 +57,9 @@ msgstr "Страница регистрации пользователя"
 msgid "logged_out"
 msgstr "Страница выхода"
 
-#: .\users\templates\registration\login.html:5
-msgid "login"
-msgstr "Страница входа"
+#: .\users\templates\registration\login.html:6
+msgid "Log in to your account"
+msgstr "Войдите в свою учётную запись"
 
 #: .\users\templates\users\delete.html:5
 msgid "delete_user_page"
@@ -82,7 +83,7 @@ msgstr "Полное имя"
 
 #: .\users\templates\users\users_list.html:12
 msgid "creation_date"
-msgstr "Страница регистрации пользователя"
+msgstr "Дата регистрации пользователя"
 
 #: .\users\templates\users\users_list.html:13
 msgid "edit_buttons"
