@@ -3,22 +3,22 @@
 
 {% block content %}
 <p>{% trans "users_list" %}</p>
-<table>
-    <thead>
+<table class="table table-hover mx-auto my-5">
+    <thead class="thead-light">
         <tr>
-            <th>ID</th>
-            <th>{% trans "username" %}</th>
-            <th>{% trans "fullname" %}</th>
-            <th>{% trans "creation_date" %}</th>
-            <th>{% trans "edit_buttons" %}</th>
+            <th scope="col">ID</th>
+            <th scope="col">{% trans "username" %}</th>
+            <th scope="col">{% trans "fullname" %}</th>
+            <th scope="col">{% trans "creation_date" %}</th>
+            <th scope="col">{% trans "edit_buttons" %}</th>
         </tr>
     </thead>
 
     <tbody>
         {% for user in users %}
         <tr>
-            <td>{{ user.id }}</td>
-            <td>{{ user.username }}</td>
+            <td scope="row">{{ user.id }}</td>
+            <td scope="row">{{ user.username }}</td>
             <td>{{ user.get_full_name }}</td>
             <td>{{ user.date_joined }}</td>
             <td>
