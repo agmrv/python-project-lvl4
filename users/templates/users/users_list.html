@@ -1,8 +1,11 @@
 {% extends "tasks/base.html" %}
 {% load i18n %}
 
+{% block page_header %}
+  <h2>{% trans "User list" %}</h2>
+{% endblock page_header %}
+
 {% block content %}
-<p>{% trans "users_list" %}</p>
 <table class="table table-hover mx-auto my-5">
     <thead class="thead-light">
         <tr>

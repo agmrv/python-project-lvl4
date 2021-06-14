@@ -1,6 +1,10 @@
 {% extends "tasks/base.html" %}
 {% load i18n %}
 
+{% block page_header %}
+  <h2>{% trans "Task manager" %}</h2>
+{% endblock page_header %}
+
 {% block content %}
 <p>{% trans "index" %}</p>
 {% endblock content %}
