@@ -1,5 +1,6 @@
+from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 
 
@@ -7,7 +8,13 @@ class Create(View):
     template_name = "registration/create.html"
 
     def get(self, request):
-        return render(request, self.template_name)
+        return render(request, self.template_name, context={"form": UserCreationForm()})
+
+    def post(self, request):
+        form = UserCreationForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("login")
 
 
 class Update(View):
@@ -22,7 +29,7 @@ class Delete(View):
     template_name = "users/delete.html"
 
     def get(self, request, user_id):
-        context = {"user_id": user_id}
+        context = {"username": user_id}
         return render(request, self.template_name, context=context)
 
 
