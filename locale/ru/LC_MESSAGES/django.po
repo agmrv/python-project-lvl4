@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 19:21+0500\n"
+"POT-Creation-Date: 2021-06-14 18:37+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,7 @@ msgstr ""
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: .\tasks\templates\tasks\base.html:10 .\tasks\templates\tasks\base.html:18
+#: .\tasks\templates\tasks\index.html:5
 msgid "Task manager"
 msgstr "МЕНЕДЖЕР ЗАДАЧ"
 
@@ -45,54 +46,56 @@ msgstr "Регистрация"
 msgid "Log in"
 msgstr "Вход"
 
-#: .\tasks\templates\tasks\index.html:5
+#: .\tasks\templates\tasks\index.html:9
 msgid "index"
 msgstr "Главная"
 
-#: .\users\templates\registration\create.html:5
-msgid "create"
-msgstr "Страница регистрации пользователя"
+#: .\users\templates\registration\create.html:6
+msgid "Create user"
+msgstr "Регистрация пользователя"
 
 #: .\users\templates\registration\logged_out.html:5
 msgid "logged_out"
-msgstr "Страница выхода"
+msgstr "Осуществлён выход из учётной записи."
 
 #: .\users\templates\registration\login.html:6
 msgid "Log in to your account"
 msgstr "Войдите в свою учётную запись"
 
 #: .\users\templates\users\delete.html:5
-msgid "delete_user_page"
-msgstr "Страница удаления пользователя с ID"
+msgid "Delete account"
+msgstr "Удаление учётной записи"
+
+#: .\users\templates\users\delete.html:9
+#: .\users\templates\users\users_list.html:30
+msgid "delete_user"
+msgstr "Удалить пользователя"
 
 #: .\users\templates\users\update.html:5
 msgid "update_user_page"
 msgstr "Страница обновления пользователя с ID"
 
 #: .\users\templates\users\users_list.html:5
-msgid "users_list"
+msgid "User list"
 msgstr "Страница списка пользователей"
 
-#: .\users\templates\users\users_list.html:10
+#: .\users\templates\users\users_list.html:13
 msgid "username"
 msgstr "Имя пользователя"
 
-#: .\users\templates\users\users_list.html:11
+#: .\users\templates\users\users_list.html:14
 msgid "fullname"
 msgstr "Полное имя"
 
-#: .\users\templates\users\users_list.html:12
+#: .\users\templates\users\users_list.html:15
 msgid "creation_date"
 msgstr "Дата регистрации пользователя"
 
-#: .\users\templates\users\users_list.html:13
+#: .\users\templates\users\users_list.html:16
 msgid "edit_buttons"
 msgstr "Кнопки редактирования"
 
-#: .\users\templates\users\users_list.html:25
+#: .\users\templates\users\users_list.html:28
 msgid "update_user"
 msgstr "Изменить"
 
-#: .\users\templates\users\users_list.html:27
-msgid "delete_user"
-msgstr "Удалить"
