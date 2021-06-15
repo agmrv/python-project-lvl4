@@ -1,4 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.views import View
@@ -17,16 +18,24 @@ class Create(View):
             return redirect("login")
 
 
-class Update(View):
+class Update(LoginRequiredMixin, View):
+    login_url = "login"
     template_name = "users/update.html"
+
+    def handle_no_permission(self):
+        return redirect(self.login_url)
 
     def get(self, request, user_id):
         context = {"username": User.objects.get(id=user_id).username}
         return render(request, self.template_name, context=context)
 
 
-class Delete(View):
+class Delete(LoginRequiredMixin, View):
+    login_url = "login"
     template_name = "users/delete.html"
+
+    def handle_no_permission(self):
+        return redirect(self.login_url)
 
     def get(self, request, user_id):
         context = {"user": User.objects.get(id=user_id)}
