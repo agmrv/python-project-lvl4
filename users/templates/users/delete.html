@@ -3,11 +3,10 @@
 {% load bootstrap4 %}
 
 {% block page_header %}
-  <h2>{% trans "Delete account" %}</h2>
+  <h2>{% trans "Delete account" %} {{ user.username }}</h2>
 {% endblock page_header %}
 
 {% block content %}
-  <p>{% trans "delete_user" %} {{ user.username }}?</p>
   <form method="post" action="{% url 'users:delete' user.id %}" class="form">
     {% csrf_token %}
     {% buttons %}
