@@ -47,7 +47,7 @@ class Delete(LoginRequiredMixin, View):
         return redirect("tasks:index")
 
 
-class Users(View):
+class List(View):
     template_name = "users/list.html"
 
     def get(self, request):
