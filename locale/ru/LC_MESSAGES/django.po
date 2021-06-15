@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-14 18:37+0500\n"
+"POT-Creation-Date: 2021-06-15 10:54+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,6 @@ msgid "Delete account"
 msgstr "Удаление учётной записи"
 
 #: .\users\templates\users\delete.html:9
-#: .\users\templates\users\users_list.html:30
 msgid "delete_user"
 msgstr "Удалить пользователя"
 
@@ -96,6 +95,9 @@ msgid "edit_buttons"
 msgstr "Кнопки редактирования"
 
 #: .\users\templates\users\users_list.html:28
-msgid "update_user"
+msgid "update"
 msgstr "Изменить"
 
+#: .\users\templates\users\users_list.html:30
+msgid "delete"
+msgstr "Удалить"
