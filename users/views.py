@@ -48,7 +48,7 @@ class Delete(LoginRequiredMixin, View):
 
 
 class Users(View):
-    template_name = "users/users_list.html"
+    template_name = "users/list.html"
 
     def get(self, request):
         users = User.objects.all()
