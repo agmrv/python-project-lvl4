@@ -29,8 +29,13 @@ class Delete(View):
     template_name = "users/delete.html"
 
     def get(self, request, user_id):
-        context = {"username": User.objects.get(id=user_id).username}
+        context = {"user": User.objects.get(id=user_id)}
         return render(request, self.template_name, context=context)
+
+    def post(self, request, user_id):
+        user = User.objects.get(id=user_id)
+        user.delete()
+        return redirect("tasks:index")
 
 
 class Users(View):
