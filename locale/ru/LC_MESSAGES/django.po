@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-15 10:54+0500\n"
+"POT-Creation-Date: 2021-06-15 11:20+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,10 @@ msgstr "Главная"
 #: .\users\templates\registration\create.html:6
 msgid "Create user"
 msgstr "Регистрация пользователя"
+
+#: .\users\templates\registration\create.html:14
+msgid "to_register"
+msgstr "Зарегистрировать"
 
 #: .\users\templates\registration\logged_out.html:5
 msgid "logged_out"
