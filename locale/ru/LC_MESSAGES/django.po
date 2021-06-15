@@ -72,7 +72,7 @@ msgstr "Удалить пользователя"
 
 #: .\users\templates\users\update.html:5
 msgid "update_user_page"
-msgstr "Страница обновления пользователя с ID"
+msgstr "Страница обновления пользователя"
 
 #: .\users\templates\users\users_list.html:5
 msgid "User list"
