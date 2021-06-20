@@ -16,6 +16,8 @@ class Create(View):
         if form.is_valid():
             form.save()
             return redirect("login")
+        else:
+            return render(request, self.template_name, context={"form": form})
 
 
 class Update(LoginRequiredMixin, View):
