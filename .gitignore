@@ -4,4 +4,4 @@ __pycache__
 .vscode/
 .idea/
 .env
-#*.sqlite3
+*.sqlite3
